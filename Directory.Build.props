@@ -1,10 +1,30 @@
 <Project>
-	
+
   <PropertyGroup>
+        <SolutionDir>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)/))</SolutionDir>
+  </PropertyGroup>
+	
+  <!-- NuGet properties-->
+  <PropertyGroup>
+    <Title>$(AssemblyName)</Title>
     <Authors>TAFS RPA Developers</Authors>
     <Company>TAFS, LLC.</Company>
     <Copyright>Copyright LuzFaltex © $([System.DateTime]::Now.Year.ToString()). All rights reserved.</Copyright>
-  </PropertyGroup>
+    
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedResources>true</EmbedUntrackedResources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <RepositoryUrl>https://github.com/TA-RPA/Tafs.Results</RepositoryUrl>
+    <RepositoryBranch>Main</RepositoryBranch>
+    <PackageOutputPath>$(SolutionDir)nuget</PackageOutputPath>
+    <PackageProjectUrl>https://github.com/TA-RPA/Tafs.Results</PackageProjectUrl>
+    <PackageTags>TAFS;RPA</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup> 
 
   <PropertyGroup>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
