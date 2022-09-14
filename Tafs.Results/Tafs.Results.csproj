@@ -4,9 +4,9 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.1.0</PackageVersion>
         <Description>Provides a set or Error Results for the Remora.Results library.</Description>
-        <PackageReleaseNotes>Ported to Net6.</PackageReleaseNotes>
+        <PackageReleaseNotes>Remove NotFoundError. Add BrowserError.</PackageReleaseNotes>
         <PackageTags>$(PackageTags);Remora;</PackageTags>
     </PropertyGroup>
 
